@@ -1,0 +1,145 @@
+/* Warna hitam putih elegan */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+}
+
+.Judul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Georgia', serif; /* Sesuaikan dengan tema Fragrances */
+}
+
+/* Pencarian Produk */
+.Pencarian input {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    width: 250px;
+}
+
+.Pencarian button {
+    padding: 10px 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.Pencarian button:hover {
+    background-color: #555;
+}
+
+/* Icon Cart */
+.Keranjang img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Navigasi */
+nav {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu a:hover {
+    color: #ccc;
+}
+
+/* Dropdown Menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content li {
+    display: block;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #333;
+}
+
+section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+/* Section Styling */
+section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero {
+    background-color: #fff;
+}
+
+.about {
+    background-color: #f2f2f2;
+}
+
+.contact {
+    background-color: #eaeaea;
+}
+
+section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.2em;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+}
