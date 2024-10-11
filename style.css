@@ -30,7 +30,7 @@ header {
     font-size: 16px;
     border: none;
     border-radius: 4px;
-    width: 250px;
+    width: 350px;
 }
 
 .Pencarian button {
@@ -47,8 +47,8 @@ header {
 }
 
 .Keranjang img {
-    width: 30px;
-    height: 30px;
+    width: 50%;
+    height: 50%;
 }
 
 nav {
@@ -266,4 +266,33 @@ footer {
     background-color: #333;
     color: #fff;
     text-align: center;
+}
+
+.galeri {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.galeri-parfum {
+    text-align: center;
+    cursor: pointer;
+}
+
+.galeri-parfum img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.galeri-parfum img:hover {
+    transform: scale(1.05);
+}
+
+.galeri-parfum p {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #333;
 }

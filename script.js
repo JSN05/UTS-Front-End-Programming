@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    // Smooth scrolling saat klik link navigasi
     $('a[href*="#"]').on('click', function(e) {
         e.preventDefault();
 
@@ -8,7 +7,6 @@ $(document).ready(function() {
         }, 500, 'linear');
     });
 
-    // Menampilkan menu dropdown pada hover
     $('.dropdown').hover(function() {
         $(this).find('.dropdown-content').slideDown(200);
     }, function() {
