@@ -47,12 +47,13 @@ header {
 }
 
 .Keranjang img {
-    width: 50%;
-    height: 50%;
+    width: auto;
+    max-width: 50px;
+    height: auto;
 }
 
 nav {
-    margin-top: 20px;
+    margin-top: 10px;
     text-align: center;
 }
 
@@ -63,12 +64,13 @@ nav {
 
 .menu li {
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 30px;
 }
 
 .menu a {
     color: #fff;
     text-decoration: none;
+    padding: 5px 10px;
     font-size: 18px;
 }
 
@@ -82,6 +84,10 @@ nav {
     background-color: #000;
     min-width: 160px;
     z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 .dropdown-content li {
@@ -106,6 +112,8 @@ section {
 
 .Main {
     background-color: #fff;
+    width: 100%;
+    height: 100%;
 }
 
 .contact {
@@ -128,6 +136,17 @@ footer {
     color: #fff;
 }
 
+@media (max-width: 768px) {
+    .Pencarian {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .Pencarian input, .Pencarian button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
 /*Keranjang.html*/
 .keranjang-section {
     padding: 50px 20px;
@@ -148,17 +167,21 @@ footer {
     padding: 20px;
 }
 
-/* Styling untuk setiap produk di keranjang */
 .items {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 200px; 
-    border: 1px solid #ffffff;
+    width: 100%;
+    max-width: 250px;
+    border: 1px solid #e0e0e0;
     padding: 20px;
     border-radius: 10px;
-    border-color: #000;
     background-color: #ffffff;
+    transition: transform 0.3s ease;
+}
+
+.items:hover {
+    transform: scale(1.05);
 }
 
 .gambar-produk {
@@ -183,6 +206,7 @@ footer {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .hapus-produk:hover {
@@ -191,7 +215,7 @@ footer {
 
 .total-harga {
     margin-top: 40px;
-    text-align: right;
+    text-align: center;
 }
 
 .total-harga h3 {
@@ -206,16 +230,38 @@ footer {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .tombol-checkout:hover {
     background-color: #555;
 }
 
+@media (max-width: 768px) {
+    .keranjang-produk {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .items {
+        width: 100%;
+        max-width: none;
+    }
+
+    .keranjang-section h2 {
+        font-size: 2em;
+    }
+
+    .info-produk h3 {
+        font-size: 1em;
+    }
+}
+
 /*Tentang.html*/
 .about-section {
     padding: 50px 20px;
     text-align: center;
+    margin-bottom: 40px;
 }
 
 .about-section h2 {
@@ -261,6 +307,11 @@ footer {
     color: #333;
 }
 
+.galeri-parfum img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
 footer {
     padding: 20px;
     background-color: #333;
@@ -268,6 +319,43 @@ footer {
     text-align: center;
 }
 
+@media (max-width: 768px) {
+    .galeri {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+/*Kontak.html*/
+.contact-info {
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+
+.social-links a {
+    margin: 10px;
+    transition: transform 0.3s;
+}
+
+.social-links a:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .contact-info, .social-links {
+        text-align: center;
+        margin: 0;
+        padding: 15px;
+    }
+
+    .social-links a {
+        display: block;
+        margin: 10px auto;
+    }
+}
+
+/*Siang, Malam, Versatile.html*/
 .galeri {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
