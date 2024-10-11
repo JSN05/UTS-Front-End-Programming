@@ -1,4 +1,4 @@
-/* Warna hitam putih elegan */
+/*Beranda.html*/
 body {
     font-family: 'Arial', sans-serif;
     color: #333;
@@ -7,7 +7,6 @@ body {
     padding: 0;
 }
 
-/* Header */
 header {
     background-color: #000;
     color: #fff;
@@ -23,10 +22,9 @@ header {
 .logo {
     font-size: 2em;
     font-weight: bold;
-    font-family: 'Georgia', serif; /* Sesuaikan dengan tema Fragrances */
+    font-family: 'Georgia', serif;
 }
 
-/* Pencarian Produk */
 .Pencarian input {
     padding: 10px;
     font-size: 16px;
@@ -48,13 +46,11 @@ header {
     background-color: #555;
 }
 
-/* Icon Cart */
 .Keranjang img {
     width: 30px;
     height: 30px;
 }
 
-/* Navigasi */
 nav {
     margin-top: 20px;
     text-align: center;
@@ -80,7 +76,6 @@ nav {
     color: #ccc;
 }
 
-/* Dropdown Menu */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -109,18 +104,8 @@ section {
     text-align: center;
 }
 
-/* Section Styling */
-section {
-    padding: 100px 20px;
-    text-align: center;
-}
-
-.hero {
+.Main {
     background-color: #fff;
-}
-
-.about {
-    background-color: #f2f2f2;
 }
 
 .contact {
@@ -136,10 +121,149 @@ section p {
     font-size: 1.2em;
 }
 
-/* Footer */
 footer {
     text-align: center;
     padding: 20px;
     background-color: #000;
     color: #fff;
+}
+
+/*Keranjang.html*/
+.keranjang-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.keranjang-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.keranjang-produk {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Styling untuk setiap produk di keranjang */
+.items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px; 
+    border: 1px solid #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    border-color: #000;
+    background-color: #ffffff;
+}
+
+.gambar-produk {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.info-produk {
+    text-align: center;
+}
+
+.info-produk h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.hapus-produk {
+    padding: 10px 15px;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hapus-produk:hover {
+    background-color: #ff3333;
+}
+
+.total-harga {
+    margin-top: 40px;
+    text-align: right;
+}
+
+.total-harga h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.tombol-checkout {
+    padding: 15px 25px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tombol-checkout:hover {
+    background-color: #555;
+}
+
+/*Tentang.html*/
+.about-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.gallery-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.gallery-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.galeri {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    padding: 20px;
+}
+
+.galeri-parfum {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.galeri-parfum img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.galeri-parfum p {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+footer {
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
 }
